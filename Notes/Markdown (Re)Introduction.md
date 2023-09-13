@@ -1,3 +1,10 @@
+---
+tags:
+  - notes
+  - slss
+  - y2023
+  - programming-1-2
+---
 # Headings
 
 We create headings in Markdown using hash (#) symbols.
