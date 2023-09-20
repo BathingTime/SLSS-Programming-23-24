@@ -14,7 +14,7 @@ We use the `print()` function to display outputs.
 print('Your text goes in here.')
 ```
 
-> **Task**
+> **Task:**
 > 1. Open Visual Studio Code.
 > 2. Make sure that it's open to your repository.
 > 3. Create a new file called `Input_and_Output.py`.
@@ -30,6 +30,31 @@ We use the hash symbol (#) to make comments.
 #This is a comment.
 ```
 
-> **Task**
-> 1. In `Input_and_Output.py`:
-> 2. 
+> **Task:**
+> • In `Input_and_Output.py`:
+> 	1. Put the header.
+> 	2. Write in some comments.
+# Input
+
+We cam grab information from the user using `input()`.
+When we run the function, it does two things:
+1. It **waits** for the user to write something or noting.
+2. The user needs press **Enter/Return** to indicate that they are finished.
+
+```python
+input()
+
+input(<prompt>)#Prints out the prompt, then waits.
+```
+# Variables
+
+Variables allow us to store information for the time that our app is running.
+
+```python
+favourite_food=input("What is your favourite food: ")
+```
+
+`favourite_food` —> name of the variable
+`=` —> assignment operator
+`input()` —> value
+## [[Strings]]
