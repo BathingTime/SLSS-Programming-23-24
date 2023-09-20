@@ -58,3 +58,43 @@ favourite_food=input("What is your favourite food: ")
 `=` —> assignment operator
 `input()` —> value
 ## [[Strings]]
+## Naming
+
+What you can do:
+1. Name them with letters, numbers, and underscores.
+2. Names **should** start with a lowercase letter.
+What you **cannot** do:
+1. You **cannot** name them with spaces or symbols.
+2. You **cannot** name them with certain names that are reserved.
+	• e.g. `if`, `elif`, `else`, `and`, `or`, `not`
+
+Good names are something like this:
+
+```python
+fave_food
+date_of_birth
+student_number
+```
+
+Bad names are like this:
+
+```python
+Favourite_food
+a
+num
+aa
+aaa
+```
+# Design
+
+The design process is the steps that we take when we create a solution to a problem.
+
+There are four steps in our design process:
+## 1. Design our algorithm in English (or any human language).
+An *algorithm* is a sequence of steps to solve a problem.
+In this class, before we start ANY programming, we write our steps in English.
+## 2. Translate our algorithm from English to Python.
+We will translate our algorithm into "proper" Python.
+## 3. Test our Python algorithm.
+Check if it works *syntactically*. In other words, we check to see if it BREAKS.
+Check if it works *semantically*. 
