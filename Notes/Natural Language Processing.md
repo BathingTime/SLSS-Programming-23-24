@@ -97,4 +97,4 @@ In this class, before we start ANY programming, we write our steps in English.
 We will translate our algorithm into "proper" Python.
 ## 3. Test our Python algorithm.
 Check if it works *syntactically*. In other words, we check to see if it BREAKS.
-Check if it works *semantically*. 
+Check if it works *semantically*.
