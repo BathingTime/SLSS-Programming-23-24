@@ -23,7 +23,7 @@ else:
 
 The problem with the above code is subtle. What I (Mr. Ubial) mean is that if the user answer with ANYTHING affirmative, the code should go into the `'yes'` block.
 
-One way to solve this problem is to use [[Strings#String Methods]].
+One way to solve this problem is to use [[Strings#String Methods|string methods]].
 
 We can use `.lower()` to catch all permutations of capital letters.
 
