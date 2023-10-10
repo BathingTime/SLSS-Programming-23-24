@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Strings.md",
+                "file": "Iteration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Strings.md",
+                "file": "Iteration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Strings.md"
+                "file": "Iteration.md"
               }
             }
           },
@@ -180,20 +179,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7b5ddda3cbe43aa2",
+  "active": "4b4901d9f7dd9e28",
   "lastOpenFiles": [
+    "Loop_Practise.py",
+    "Errors.md",
+    "Iteration.md",
+    "Strings.md",
     "Food_Suggestion_Bot.py",
     "Objects.md",
     "Natural Language Processing.md",
     "Modules.md",
     "Markdown (Re)Introduction.md",
     "Lists.md",
-    "Iteration.md",
     "Headers.md",
-    "Errors.md",
     "Conditionals.md",
     "Boolean.md",
-    "Strings.md",
     "Warmup_1.py",
     "Chatbot.py",
     "Input_and_Output.py",
