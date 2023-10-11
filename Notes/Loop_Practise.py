@@ -35,8 +35,10 @@ for item in groceries:
 # *****
 # ******
 
-for stars in range(1,7):
-    print('*'*stars)
+rows=['*'*stars for stars in range(1,7)]
+
+for row in rows:
+    print(row)
 
 # Problem:
 # Create a New Years Countdown that's automated
