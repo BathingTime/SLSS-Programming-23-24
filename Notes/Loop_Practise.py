@@ -56,7 +56,7 @@ for row in rows:
 
 for second in range(10,0,-1):
     print(second)
-    time.sleep(1)
+    # time.sleep(1)
 print('Happy New Year!')
 
 # Implement Linear Search.
@@ -89,3 +89,19 @@ else:
 # Print out "Mr. Ubial is cool" 20 times.
 for _ in range(20):
     print('Mr. Ubial is cool')
+
+# 1. Print all even numbers between
+#     1200 and 1500 inclusive.
+#     Use a for loop.
+
+for i in range(1200,1501,2):
+    print(i)
+
+# 2. Print all odd numbers between
+#     -150 and 0 inclusive.
+
+for i in range(-149,0,2):
+    print(i)
+
+# Once you have your solution,
+# Copy and paste your answer in #i-made-this

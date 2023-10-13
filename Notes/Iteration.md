@@ -83,3 +83,53 @@ for i in range(<positive integer>):
 	<code block>
 ```
 
+e.g.
+
+```Python
+# Print 'Mr. Ubial is pretty cool!' 20 times.
+for _ in range(20):
+print('Mr. Ubial is pretty cool!')
+```
+
+Recall that in the other way of looping for items in a list, that "item" points at the current item in the list.
+In this way of looping, that item thing shows us how many times we have looped since the beginning.
+
+For example, we can do something like this:
+
+```Python
+for i in range(5):
+	print(i)
+```
+
+Simply put, `i` is a counter. It counts how many times we are looping.
+# range() Function
+
+`range()` is a function that gives you a sequence of numbers starting at 0 by default.
+By default it goes up by 1.
+It stops before the number that you provide as an input.
+
+```Python
+range(100) # —> Sequence(0,1,2,…,98,99)
+```
+
+We can modify `range()` to start, stop, and count up/down by different numbers.
+
+```Python
+range(<start>,<stop>,<step>)
+```
+
+e.g.
+
+```Python
+range(0,100) # —> Sequence(0,1,2,…,98,99)
+
+range(-10,10) # —> Sequence(-10,-9,-8,…,8,9)
+
+range(0,100,2) # —> Sequence(0,2,4,…,96,98)
+
+range(100,0,-1) # —> Sequence(100,99,98,…,2,1)
+```
+# Break
+
+`break` allows us to **stop** the looping.
+Once `break` is reached, no other code underneath it in the loop code block will run.
