@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "504c0ce257d27aa8",
+        "id": "1869800f39f2303b",
         "type": "tabs",
         "children": [
           {
-            "id": "4b4901d9f7dd9e28",
+            "id": "b5ef21f9b9b5b4eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Iteration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fe2a9f623acb9ae0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Errors.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7b5ddda3cbe43aa2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Strings.md",
+                "file": "Natural Language Processing.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Iteration.md",
+                "file": "Natural Language Processing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Iteration.md",
+                "file": "Natural Language Processing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Iteration.md"
+                "file": "Natural Language Processing.md"
               }
             }
           },
@@ -179,12 +155,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4b4901d9f7dd9e28",
+  "active": "690992bda1aa06cc",
   "lastOpenFiles": [
-    "Loop_Practise.py",
+    "Star_Wars_Bot.py",
+    "Strings.md",
     "Errors.md",
     "Iteration.md",
-    "Strings.md",
+    "Loop_Practise.py",
     "Food_Suggestion_Bot.py",
     "Objects.md",
     "Natural Language Processing.md",
