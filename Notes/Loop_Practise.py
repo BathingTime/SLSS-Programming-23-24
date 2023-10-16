@@ -56,7 +56,7 @@ for row in rows:
 
 for second in range(10,0,-1):
     print(second)
-    # time.sleep(1)
+    time.sleep(1)
 print('Happy New Year!')
 
 # Implement Linear Search.
