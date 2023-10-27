@@ -1,26 +1,26 @@
-#Food Suggestion Bot
-#Sunny Lin
-#Oct 6, 23
+# Food Suggestion Bot
+# Sunny Lin
+# Oct 6, 23
 
-#A bot that asks the user what their favourite food is.
-#Based on that food, it will classify the type/genre/cuisine of the food,
-#then give a restaurant suggestion.
+# A bot that asks the user what their favourite food is.
+# Based on that food, it will classify the type/genre/cuisine of the food,
+# then give a restaurant suggestion.
 
 import time
 
-#Introduce the bot to the user.
-#Ask the user what their favourite food is.
+# Introduce the bot to the user.
+# Ask the user what their favourite food is.
 print('Hello, I am here to suggest you a restaurant.')
 time.sleep(1)
 fave_food=input('To help me suggest a restaurant, what is your favourite food? ').lower().strip(',.!? ')
 time.sleep(1)
 
-#Italian cuisine:
+# Italian cuisine:
 italian_food=['pasta','pizza','canneloni','tiramisu']
-#Dingo cuisine:
+# Dingo cuisine:
 dingo_food=['dingo','dawg','sussydawg','dringue','drongue','blingue','blongue']
 
-#If they answer with Italian food, suggest an Italian restaurant.
+# If they answer with Italian food, suggest an Italian restaurant.
 if fave_food in italian_food:
     print('I see that you might like Italian food.')
     time.sleep(1)
