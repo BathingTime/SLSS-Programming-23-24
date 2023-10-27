@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "088956cc4f36bbe3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Type.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Natural Language Processing.md",
+                "file": "Type.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Natural Language Processing.md",
+                "file": "Type.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Natural Language Processing.md"
+                "file": "Type.md"
               }
             }
           },
@@ -155,8 +168,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "690992bda1aa06cc",
+  "active": "088956cc4f36bbe3",
   "lastOpenFiles": [
+    "Natural Language Processing.md",
+    "Type.md",
     "Star_Wars_Bot.py",
     "Strings.md",
     "Errors.md",
@@ -164,7 +179,6 @@
     "Loop_Practise.py",
     "Food_Suggestion_Bot.py",
     "Objects.md",
-    "Natural Language Processing.md",
     "Modules.md",
     "Markdown (Re)Introduction.md",
     "Lists.md",
