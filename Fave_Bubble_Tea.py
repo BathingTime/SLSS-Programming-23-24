@@ -40,4 +40,8 @@ for _ in range(NUM_RESPONDENTS):
     # Repeat five times.
 
 # Print out a summary.
-print('\n'.join(map(cap,[place.capitalize()+': '+str(counters[place]) for place in counters])))
+# Raw scores and percentage score.
+print('Raw scores:\n')
+print('\n'.join(map(cap,[place.capitalize()+': '+str(counters[place]) for place in counters]))+'\n')
+print('Percentage scores:\n')
+print('\n'.join(map(cap,[place.capitalize()+': '+str(round(counters[place]/NUM_RESPONDENTS*100))+'%' for place in counters])))
