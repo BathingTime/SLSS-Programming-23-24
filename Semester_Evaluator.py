@@ -15,6 +15,7 @@ for course in range(courses_taking):
 # Calculate the average rating.
 ave_rate=round(total_rates/courses_taking,2)
 
+# Respond based on what the average rating is.
 if ave_rate<=1:
     print(f'{ave_rate}? Ouch.')
 elif 1<ave_rate<3:
