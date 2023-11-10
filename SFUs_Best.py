@@ -5,16 +5,24 @@
 # Load data from CSV file.
 # Read it in a meaningful way.
 # Link our similarity score algorithm to the data.
-    
+
 # Create a "profile" for someone that shows their favourite places at SFU.
-profile=[]
+profile=['Bubble World',
+'Noodle Waffle Cafe',
+'Pizza Hut',
+'Quesada (Cornerstone)',
+'Subway',
+'Tim Horton\'s',
+'Bamboo Garden',
+'Uncle Fatih\'s',
+'Guadalupe (MBC)']
 
 # Initialise our top similarity score and their name.
 top_sim_score=0
 top_sim_name=''
 
 # Open the file.
-with open('./data.csv') as dataFile:
+with open('/Users/sl000268/Programming/SLSS-Programming-23-24/data.csv') as dataFile:
     # Throw away the header line.
     _=dataFile.readline()
 
