@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5ec3e62c9b10f47c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Recommendation Systems.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lists.md",
+                "file": "Recommendation Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lists.md",
+                "file": "Recommendation Systems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lists.md"
+                "file": "Recommendation Systems.md"
               }
             }
           },
@@ -155,8 +168,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "690992bda1aa06cc",
+  "active": "5ec3e62c9b10f47c",
   "lastOpenFiles": [
+    "Lists.md",
+    "Recommendation Systems.md",
     "Type.md",
     "Natural Language Processing.md",
     "Star_Wars_Bot.py",
@@ -168,7 +183,6 @@
     "Objects.md",
     "Modules.md",
     "Markdown (Re)Introduction.md",
-    "Lists.md",
     "Headers.md",
     "Conditionals.md",
     "Boolean.md",
