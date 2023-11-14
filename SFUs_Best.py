@@ -20,6 +20,7 @@ profile=['Bubble World',
 # Initialise our top similarity score and their name.
 top_sim_score=0
 top_sim_name=''
+first=True
 
 # Open the file.
 with open('/Users/sl000268/Programming/SLSS-Programming-23-24/data.csv') as dataFile:
@@ -48,11 +49,21 @@ with open('/Users/sl000268/Programming/SLSS-Programming-23-24/data.csv') as data
         # Print the current sim score.
         print(f'{current_name} — score: {current_sim_score}')
 
-        # If the current score is > top sim score:
-        if current_sim_score>top_sim_score:
-            # Update the top sim score and top name.
+        # If we are not checking the first person:
+        if not first:
+            # If the current score is < top sim score:
+            if current_sim_score<top_sim_score:
+                # Update the top sim score and top name.
+                top_sim_score=current_sim_score
+                top_sim_name=current_name
+
+        # Else if we are checking the first person:
+        else:
             top_sim_score=current_sim_score
             top_sim_name=current_name
+
+            # We are no longer checking the first person.
+            first=False
 
 print(f'''TOP SIMILAR PERSON!
       {top_sim_name} — score: {top_sim_score}''')
