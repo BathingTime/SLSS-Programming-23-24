@@ -11,7 +11,7 @@ person_1_hobbies=input('Person 1: ').lower().split()
 # Second person's hobbies.
 person_2_hobbies=input('Person 2: ').lower().split()
 
-# Initiate the sim score.
+# Initialise the sim score.
 sim_score=0
 
 # Iterate through the first person's hobbies.
