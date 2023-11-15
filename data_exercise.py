@@ -23,7 +23,6 @@ with open("/Users/sl000268/Programming/SLSS-Programming-23-24/data_example.csv",
 
 # --- Problems
 
-
 # Problem 1:
 # Open the file and print the contents of the second line in the file.
 
