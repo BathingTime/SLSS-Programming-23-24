@@ -35,6 +35,8 @@ screen.bgcolor("black")
 
 turtle.speed(0)
 
+# Circles
+
 # while True:
 #     turtle.color(random.random(),random.random(),random.random())
 #     turtle.pu()
@@ -43,6 +45,8 @@ turtle.speed(0)
 #     turtle.pensize(random.randint(1,100))
 #     turtle.pd()
 #     turtle.circle(random.randint(1,500))
+
+# Portal
 
 # turtle.color('white')
 # num=1
@@ -56,13 +60,15 @@ turtle.speed(0)
 #     turtle.seth(direction1)
 #     turtle.pd()
 #     turtle.forward(num)
-#     turtle.seth(direction1)
+#     turtle.seth(direction2)
 #     num+=1
 #     direction2+=1
 
-turtle.color('white')
-num=1
-while True:
-    turtle.forward(50)
-    turtle.left(num)
-    num+=1
+# Integral
+
+# turtle.color('white')
+# num=1
+# while True:
+#     turtle.forward(50)
+#     turtle.left(num)
+#     num+=1
