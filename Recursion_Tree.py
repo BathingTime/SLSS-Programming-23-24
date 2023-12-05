@@ -5,7 +5,8 @@
 import turtle
 
 # CONSTS:
-ANGLE=30
+ANGLE=60
+BRANCHES=3
 FACTOR=.9
 START=100
 
@@ -24,17 +25,25 @@ def leaf():
     turtle.left(90)
 
 def grow(togo,length):
+    # If there are more levels to go:
     if togo:
+        # Make a new branch.
         turtle.forward(length)
+        # If the next level has more levels to go:
         if togo-1:
-            turtle.left(ANGLE)
+            # Turn left for the first branch.
+            turtle.left(ANGLE/2)
             grow(togo-1,length*FACTOR)
-            turtle.right(ANGLE*2)
-            grow(togo-1,length*FACTOR)
-            turtle.left(ANGLE)
+            # Make BRANCH-1 more branches.
+            for _ in range(BRANCHES-1):
+                turtle.right(ANGLE/(BRANCHES-1))
+                grow(togo-1,length*FACTOR)
+            # Return to the original angle.
+            turtle.left(ANGLE/2)
         else:
             leaf()
         turtle.backward(length)
+    # If this is the last level:
     else:
         leaf()
 
