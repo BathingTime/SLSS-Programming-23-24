@@ -12,10 +12,10 @@ with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/kid-g
         for y in range(subject.height):
             # Inner loop is left->right.
             for x in range(subject.width):
-                # if the current pixel is green:
-                if Colour_Helper.pixel_to_string(subject.getpixel((x,y))):
+                # If the current pixel is green:
+                if Colour_Helper.isGreen(subject.getpixel((x,y))):
                     # Switch the current pixel with the corresponding background pixel.
                     subject.putpixel((x,y),background.getpixel((x,y)))
-        
+
         # Save the image.
         subject.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/output.jpg')
