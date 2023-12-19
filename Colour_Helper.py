@@ -14,10 +14,20 @@ def is_green(pixel:tuple)->str:
 
 def is_light(pixel:tuple)->bool:
     '''
-    Returns if a pixel is light.
+    Return if a pixel is light.
 
     Params:
     • pixel:tuple = the pixel to be checked.
     '''
 
     return pixel[0]>127 and pixel[1]>127 and pixel[2]>127
+
+def gray_scale(pixel:tuple)->int:
+    '''
+    Return the rgb value for the gray-version of a pixel.
+
+    Params:
+    • pixel:tuple = the pixel to be checked.
+    '''
+
+    return (pixel[0]+pixel[1]+pixel[2])//3

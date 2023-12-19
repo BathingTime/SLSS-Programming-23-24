@@ -19,16 +19,28 @@ import Colour_Helper
 #         # Save the image.
 #         subject.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/greenscreen_example.jpg')
 
+# with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/best_pizza.jpg') as im:
+#     # Iterate through each row of pixel in the picture.
+#     for y in range(im.height):
+#         # Iterate through each pixel of each row.
+#         for x in range(im.width):
+#             # Change the current pixel to white if it is light or black if it is dark.
+#             if Colour_Helper.is_light(im.getpixel((x,y))):
+#                 im.putpixel((x,y),(255,255,255))
+#             else:
+#                 im.putpixel((x,y),(0,0,0))
+
+#     # Save the image.
+#     im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/binary_example.jpg')
+
 with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/best_pizza.jpg') as im:
     # Iterate through each row of pixel in the picture.
     for y in range(im.height):
         # Iterate through each pixel of each row.
         for x in range(im.width):
-            # Change the current pixel to white if it is light or black if it is dark.
-            if Colour_Helper.is_light(im.getpixel((x,y))):
-                im.putpixel((x,y),(255,255,255))
-            else:
-                im.putpixel((x,y),(0,0,0))
+            # Change the current pixel to its gray-scaled version.
+            new_rgb=Colour_Helper.gray_scale(im.getpixel((x,y)))
+            im.putpixel((x,y),tuple([new_rgb]*3))
 
     # Save the image.
-    im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/binary_example.jpg')
+    im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/grayscaled_example.jpg')
