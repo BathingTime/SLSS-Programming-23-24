@@ -6,18 +6,18 @@ from PIL import Image
 
 import Colour_Helper
 
-with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/kid-green.jpg') as subject:
-    with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/beach.jpg') as background:
-        # Iterate through each row of pixel in the picture.
-        for y in range(subject.height):
-            # Iterate through each pixel of each row.
-            for x in range(subject.width):
-                # If the current pixel is green, switch it with its corresponding background pixel.
-                if Colour_Helper.is_green(subject.getpixel((x,y))):
-                    subject.putpixel((x,y),background.getpixel((x,y)))
+# with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/kid-green.jpg') as subject:
+#     with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/beach.jpg') as background:
+#         # Iterate through each row of pixel in the picture.
+#         for y in range(subject.height):
+#             # Iterate through each pixel of each row.
+#             for x in range(subject.width):
+#                 # If the current pixel is green, switch it with its corresponding background pixel.
+#                 if Colour_Helper.is_green(subject.getpixel((x,y))):
+#                     subject.putpixel((x,y),background.getpixel((x,y)))
 
-        # Save the image.
-        subject.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/greenscreen_example.jpg')
+#         # Save the image.
+#         subject.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/greenscreen_example.jpg')
 
 with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/best_pizza.jpg') as im:
     # Iterate through each row of pixel in the picture.
