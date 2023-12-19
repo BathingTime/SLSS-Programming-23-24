@@ -2,6 +2,8 @@
 # Sunny Lin
 # Dec 13, 23
 
+from random import randint
+
 def is_green(pixel:tuple)->str:
     '''
     Return if a pixel is green.
@@ -40,4 +42,4 @@ def contrary(pixel:tuple)->tuple:
     • pixel:tuple = the pixel to be checked.
     '''
 
-    return tuple(255-a for a in pixel)
+    return tuple(255-rgb for rgb in pixel)

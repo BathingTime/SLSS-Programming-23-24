@@ -3,6 +3,7 @@
 # Dec 13, 23
 
 from PIL import Image
+from random import randint
 
 import Colour_Helper
 
@@ -45,13 +46,68 @@ import Colour_Helper
 #     # Save the image.
 #     im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/grayscaled_example.jpg')
 
+# with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/best_pizza.jpg') as im:
+#     # Iterate through each row of pixel in the picture.
+#     for y in range(im.height):
+#         # Iterate through each pixel of each row.
+#         for x in range(im.width):
+#             # Change the current pixel to its contrary version.
+#             im.putpixel((x,y),Colour_Helper.contrary(im.getpixel((x,y))))
+
+#     # Save the image.
+#     im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/contrary_example.jpg')
+
+# new_rgb={}
+
+# for current in range(0,256):
+#     new_rgb[current]=randint(0,255)
+
+# with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/best_pizza.jpg') as im:
+#     # Iterate through each row of pixel in the picture.
+#     for y in range(im.height):
+#         # Iterate through each pixel of each row.
+#         for x in range(im.width):
+#             # Change the current pixel to its contrary version.
+#             im.putpixel((x,y),tuple(new_rgb[rgb] for rgb in im.getpixel((x,y))))
+
+#     # Save the image.
+#     im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/random_example.jpg')
+
+# new_rgb={}
+
+# for current in range(0,255//10+1):
+#     new_rgb[current]=randint(0,255)
+
+# with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/best_pizza.jpg') as im:
+#     # Iterate through each row of pixel in the picture.
+#     for y in range(im.height):
+#         # Iterate through each pixel of each row.
+#         for x in range(im.width):
+#             # Change the current pixel to its contrary version.
+#             im.putpixel((x,y),tuple(new_rgb[rgb//10] for rgb in im.getpixel((x,y))))
+
+#     # Save the image.
+#     im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/random2_example.jpg')
+
+new_rgbs=[]
+
+for _ in range(3):
+    new_rgb={}
+    for current in range(0,255//10+1):
+        new_rgb[current]=randint(0,255)
+    new_rgbs.append(new_rgb)
+
 with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/best_pizza.jpg') as im:
     # Iterate through each row of pixel in the picture.
     for y in range(im.height):
         # Iterate through each pixel of each row.
         for x in range(im.width):
             # Change the current pixel to its contrary version.
-            im.putpixel((x,y),Colour_Helper.contrary(im.getpixel((x,y))))
+            current=im.getpixel((x,y))
+            random_rgb=[]
+            for pos_rgb in range(3):
+                random_rgb.append(new_rgbs[pos_rgb][current[pos_rgb]])
+            im.putpixel((x,y),tuple(random_rgb))
 
     # Save the image.
-    im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/contrary_example.jpg')
+    im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/random3_example.jpg')
