@@ -31,3 +31,13 @@ def gray_scale(pixel:tuple)->int:
     '''
 
     return (pixel[0]+pixel[1]+pixel[2])//3
+
+def contrary(pixel:tuple)->tuple:
+    '''
+    Return the contrary version of a pixel.
+
+    Params:
+    • pixel:tuple = the pixel to be checked.
+    '''
+
+    return tuple(255-a for a in pixel)
