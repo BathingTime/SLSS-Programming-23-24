@@ -79,7 +79,7 @@ def random3(im_name:str)->None:
         im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/random3.jpg')
 
 def scramble(im_name:str)->None:
-    rows,cols=100,1
+    rows,cols=1,400
     grid=[[(x,y) for x in range(cols)] for y in range(rows)]
     for y in range(rows):
         for x in range(cols):
@@ -98,4 +98,4 @@ def scramble(im_name:str)->None:
 def wiggle(im_name:str)->None:
     ...
 
-wiggle('best_pizza')
+scramble('best_pizza')
