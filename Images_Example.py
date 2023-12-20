@@ -7,6 +7,8 @@ from random import randint
 
 import Colour_Helper
 
+# Greenscreen
+
 # with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/kid-green.jpg') as subject:
 #     with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/beach.jpg') as background:
 #         # Iterate through each row of pixel in the picture.
@@ -19,6 +21,8 @@ import Colour_Helper
 
 #         # Save the image.
 #         subject.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/greenscreen_example.jpg')
+
+# Binary
 
 # with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/best_pizza.jpg') as im:
 #     # Iterate through each row of pixel in the picture.
@@ -34,6 +38,8 @@ import Colour_Helper
 #     # Save the image.
 #     im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/binary_example.jpg')
 
+# Gray-scale
+
 # with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/best_pizza.jpg') as im:
 #     # Iterate through each row of pixel in the picture.
 #     for y in range(im.height):
@@ -46,6 +52,8 @@ import Colour_Helper
 #     # Save the image.
 #     im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/grayscaled_example.jpg')
 
+# Contrary
+
 # with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/best_pizza.jpg') as im:
 #     # Iterate through each row of pixel in the picture.
 #     for y in range(im.height):
@@ -56,6 +64,8 @@ import Colour_Helper
 
 #     # Save the image.
 #     im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/contrary_example.jpg')
+
+# Random
 
 # new_rgb={}
 
@@ -73,6 +83,8 @@ import Colour_Helper
 #     # Save the image.
 #     im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/random_example.jpg')
 
+# Random 2
+
 # new_rgb={}
 
 # for current in range(0,255//10+1):
@@ -88,6 +100,8 @@ import Colour_Helper
 
 #     # Save the image.
 #     im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/random2_example.jpg')
+
+# Random 3
 
 new_rgbs=[]
 
@@ -106,7 +120,7 @@ with Image.open('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/best_
             current=im.getpixel((x,y))
             random_rgb=[]
             for pos_rgb in range(3):
-                random_rgb.append(new_rgbs[pos_rgb][current[pos_rgb]])
+                random_rgb.append(new_rgbs[pos_rgb][current[pos_rgb]//10])
             im.putpixel((x,y),tuple(random_rgb))
 
     # Save the image.
