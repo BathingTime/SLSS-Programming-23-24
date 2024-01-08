@@ -26,14 +26,14 @@ def winter_holiday(good_or_bad:str)->str:
           'I was supposed to see a movie with my friends but I could not.',
           'I could not play Garry\'s Mod because my laptop could not support something.')
     
-    if good_or_bad:
+    if good_or_bad.strip(' ,.!?').lower()=='good':
         return choice(goods)
     return choice(bads)
 
 # Runs all the things we want to test in our .py file.
 def main()->None:
-    winter_holiday('good')
-    winter_holiday('bad')
+    print(winter_holiday('good'))
+    print(winter_holiday('bad'))
 
 # If we are running THIS FILE using Python:
 if __name__=='__main__':
