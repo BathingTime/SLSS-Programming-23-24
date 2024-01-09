@@ -2,8 +2,6 @@
 # Sunny Lin
 # Dec 13, 23
 
-from random import randint
-
 def is_green(pixel:tuple)->str:
     '''
     Return if a pixel is green.
