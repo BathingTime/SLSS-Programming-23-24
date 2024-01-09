@@ -29,7 +29,9 @@ def winter_holiday(good_or_bad:str)->str:
     
     if good_or_bad.strip(' ,.!?').lower()=='good':
         return choice(goods)
-    return choice(bads)
+    if good_or_bad.strip(' ,.!?').lower()=='bad':
+        return choice(bads)
+    return 'I can only accept good or bad.'
 
 # Runs all the things we want to test in our .py file.
 def main()->None:
