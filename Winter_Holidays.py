@@ -24,7 +24,8 @@ def winter_holiday(good_or_bad:str)->str:
     
     bads=('I lacked human interaction for more than a week.',
           'I was supposed to see a movie with my friends but I could not.',
-          'I could not play Garry\'s Mod because my laptop could not support something.')
+          'I could not play Garry\'s Mod because my laptop could not support something.',
+          'I impetuously left a group chat for no reason and made my ex very angry.')
     
     if good_or_bad.strip(' ,.!?').lower()=='good':
         return choice(goods)
