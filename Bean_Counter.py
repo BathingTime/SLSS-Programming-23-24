@@ -17,4 +17,10 @@ def count_colours(im_name:str)->None:
     with Image.open(f'/Users/sl000268/Programming/SLSS-Programming-23-24/Images/{im_name}.jpg') as im:
         for y in range(im.height):
             for x in range(im.width):
-                for 
+                for colour in colours:
+                    if colour[1](im.getpixel((x,y))):
+                        colours[colour]+=1
+        total=im.width*im.height
+        return '\n'.join([f'{round(colours[colour]/total*100,2)}% of the image is {colour[0]}.' for colour in colours])
+
+print(count_colours('Jelly Beans'))
