@@ -23,4 +23,17 @@ def count_colours(im_name:str)->None:
         total=im.width*im.height
         return '\n'.join([f'{round(colours[colour]/total*100,2)}% of the image is {colour[0]}.' for colour in colours])
 
-print(count_colours('Jelly Beans'))
+def show_colours(im_name:str)->None:
+    with Image.open(f'/Users/sl000268/Programming/SLSS-Programming-23-24/Images/{im_name}.jpg') as original:
+        with Image.open(f'/Users/sl000268/Programming/SLSS-Programming-23-24/Images/{im_name}.jpg') as isolated:
+            for colour in (('Red',Bean_Helper.red),('Orange',Bean_Helper.orange),('Yellow',Bean_Helper.yellow),('Green',Bean_Helper.green),('Blue',Bean_Helper.blue),('Pink',Bean_Helper.pink),('Black',Bean_Helper.black)):
+                for y in range(original.height):
+                    for x in range(original.width):
+                        if colour[1](original.getpixel((x,y))):
+                            isolated.putpixel((x,y),original.getpixel((x,y)))
+                        else:
+                            isolated.putpixel((x,y),(255,255,255))
+                isolated.save(f'/Users/sl000268/Programming/SLSS-Programming-23-24/Images/Only_{colour[0]}.jpg')
+
+print(count_colours('Jelly_Beans'))
+show_colours('Jelly_Beans')

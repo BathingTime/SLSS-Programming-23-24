@@ -14,7 +14,7 @@ def greenscreen(subject_name:str,background_name:str)->None:
                 for x in range(subject.width):
                     if Colour_Helper.is_green(subject.getpixel((x,y))):
                         subject.putpixel((x,y),background.getpixel((x,y)))
-            subject.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/greenscreen.jpg')
+            subject.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/Greenscreen_Example.jpg')
 
 def binary(im_name:str)->None:
     with Image.open(f'/Users/sl000268/Programming/SLSS-Programming-23-24/Images/{im_name}.jpg') as im:
@@ -24,7 +24,7 @@ def binary(im_name:str)->None:
                     im.putpixel((x,y),(255,255,255))
                 else:
                     im.putpixel((x,y),(0,0,0))
-        im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/binary.jpg')
+        im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/Binary_Example.jpg')
 
 def grayscale(im_name:str)->None:
     with Image.open(f'/Users/sl000268/Programming/SLSS-Programming-23-24/Images/{im_name}.jpg') as im:
@@ -32,14 +32,14 @@ def grayscale(im_name:str)->None:
             for x in range(im.width):
                 new_rgb=Colour_Helper.gray_scale(im.getpixel((x,y)))
                 im.putpixel((x,y),tuple([new_rgb]*3))
-        im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/grayscale.jpg')
+        im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/Grayscaled_Example.jpg')
 
 def contrary(im_name:str)->None:
     with Image.open(f'/Users/sl000268/Programming/SLSS-Programming-23-24/Images/{im_name}.jpg') as im:
         for y in range(im.height):
             for x in range(im.width):
                 im.putpixel((x,y),Colour_Helper.contrary(im.getpixel((x,y))))
-    im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/contrary.jpg')
+    im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/Contrary_Example.jpg')
 
 def random(im_name:str)->None:
     new_rgb={}
@@ -49,7 +49,7 @@ def random(im_name:str)->None:
         for y in range(im.height):
             for x in range(im.width):
                 im.putpixel((x,y),tuple(new_rgb[rgb] for rgb in im.getpixel((x,y))))
-        im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/random.jpg')
+        im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/Random_Example.jpg')
 
 def random2(im_name:str)->None:
     new_rgb={}
@@ -59,7 +59,7 @@ def random2(im_name:str)->None:
         for y in range(im.height):
             for x in range(im.width):
                 im.putpixel((x,y),tuple(new_rgb[rgb//10] for rgb in im.getpixel((x,y))))
-        im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/random2.jpg')
+        im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/Random2_Example.jpg')
 
 def random3(im_name:str)->None:
     new_rgbs=[]
@@ -76,7 +76,7 @@ def random3(im_name:str)->None:
                 for pos_rgb in range(3):
                     random_rgb.append(new_rgbs[pos_rgb][current[pos_rgb]//10])
                 im.putpixel((x,y),tuple(random_rgb))
-        im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/random3.jpg')
+        im.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/Random3_Example.jpg')
 
 def scramble(im_name:str)->None:
     rows,cols=1,400
@@ -93,9 +93,9 @@ def scramble(im_name:str)->None:
                     for im_y in range(height):
                         for im_x in range(width):
                             im2.putpixel((grid[grid_y][grid_x][0]*width+im_x,grid[grid_y][grid_x][1]*height+im_y),im1.getpixel((grid_x*width+im_x,grid_y*height+im_y)))
-            im2.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/scramble.jpg')
+            im2.save('/Users/sl000268/Programming/SLSS-Programming-23-24/Images/Scrambled_Example.jpg')
 
 def wiggle(im_name:str)->None:
     ...
 
-scramble('best_pizza')
+scramble('Best_Pizza')
