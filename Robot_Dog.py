@@ -21,10 +21,11 @@ def ball_centre(im_name:str)->str:
                         top=y
                     if bottom<y:
                         bottom=y
-        for y in range((top+bottom)//2-1,(top+bottom)//2+1):
-            for x in range((left+right)//2-1,(left+right)//2+1):
+        mid_x,mid_y=(left+right)//2,(top+bottom)//2
+        for y in range(mid_y-1,mid_y+1):
+            for x in range(mid_x-1,mid_x+1):
                 im.putpixel((x,y),(0,0,0))
         im.save(f'/Users/sl000268/Programming/SLSS-Programming-23-24/Images/Ball_Centre.jpg')
-        return f'The centre of the ball is at ({(left+right)//2}, {(top+bottom)//2}) from the top-right.'
+        return f'The centre of the ball is at ({mid_x}, {mid_y}) from the top-right.'
 
 print(ball_centre('Red_Ball.jpeg'))
