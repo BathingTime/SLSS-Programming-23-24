@@ -25,12 +25,12 @@ with open('/Users/sl000268/Programming/SLSS-Programming-23-24/spotify.csv') as d
         else:
             # If the artist is Drake, append the artist, song name, and danceability as a tuple into the Drake list.:
             if 'drake' in line['artist'].lower():
-                drake_songs.append((line['artist'],line['song_title'],line['danceability']))
+                drake_songs.append((line['artist'],line['song_title'],line['valence'],line['danceability']))
         
         # Increment the line number.
         line_num+=1
 
 # Print all the Drake songs that have danceability of .5 or higher.
 for song in drake_songs:
-    if float(song[2])>=.5:
+    if float(song[3])>=.5:
         print(song[1])

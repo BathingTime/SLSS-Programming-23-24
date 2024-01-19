@@ -6,10 +6,8 @@ from math import sqrt
 import random
 import turtle
 
-# Get screen dimensions.
+# Construct screen object.
 screen=turtle.Screen()
-width=screen.window_width()/2
-height=screen.window_height()/2
 
 # Construct baker turtle.
 baker=turtle.Turtle()
@@ -17,6 +15,10 @@ baker.speed(0)
 baker.pu()
 
 while True:
+    # Get screen dimensions.
+    width=screen.window_width()//2
+    height=screen.window_height()//2
+
     # Make a random radius for the cookie.
     radius=random.randint(10,100)
 
